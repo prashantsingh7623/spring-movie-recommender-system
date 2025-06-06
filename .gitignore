@@ -1,0 +1,67 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Optional: if you want to keep `.idea` but ignore workspace settings
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+
+### Compiled class files ###
+*.class
+
+### Logs ###
+*.log
+
+### Build directories ###
+/target/
+/build/
+
+### Maven ###
+.mvn/
+!**/src/main/**/.keep
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+### Gradle ###
+.gradle/
+build/
+!gradle-wrapper.jar
+!gradlew
+!gradlew.bat
+gradle-app.setting
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
+
+### IDE-specific ###
+*.swp
+*.swo
+
+### Spring Boot ###
+# Local environment files
+.env
+application-local.yml
+application-dev.yml
+application-test.yml
+
+### Coverage ###
+jacoco.exec
+
+### Others ###
+*.log
+*.tmp
+*.bak
+*.old
+
+# If you use Lombok and annotation processors
+*.class
+*.generated.java
