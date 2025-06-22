@@ -1,11 +1,13 @@
 package com.spring.basics.spring_movie_recommender_system.recommender;
 
 import com.spring.basics.spring_movie_recommender_system.filter.Filter;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+//@Primary
+@Qualifier("CF")
 public class CollaborativeFilter implements Filter {
 
     @Override
