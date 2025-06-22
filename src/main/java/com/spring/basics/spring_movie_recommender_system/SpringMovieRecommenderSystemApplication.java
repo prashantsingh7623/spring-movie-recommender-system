@@ -1,14 +1,14 @@
 package com.spring.basics.spring_movie_recommender_system;
 
-import com.spring.basics.spring_movie_recommender_system.recommender.ContentBasedFilter;
 import com.spring.basics.spring_movie_recommender_system.recommender.RecommenderImplementation;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 
 import java.util.Arrays;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class SpringMovieRecommenderSystemApplication {
 
 	public static void main(String[] args) {
