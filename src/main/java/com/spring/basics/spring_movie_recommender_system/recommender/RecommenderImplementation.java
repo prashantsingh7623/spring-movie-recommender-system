@@ -2,15 +2,17 @@ package com.spring.basics.spring_movie_recommender_system.recommender;
 
 import com.spring.basics.spring_movie_recommender_system.filter.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class RecommenderImplementation {
 
-    private final Filter filter;
+    private Filter filter;
 
     @Autowired
-    public RecommenderImplementation(Filter filter) {
+    @Qualifier("CF")
+    public void setFilter(Filter filter) {
         this.filter = filter;
     }
 

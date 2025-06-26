@@ -4,8 +4,7 @@ import com.spring.basics.spring_movie_recommender_system.filter.Filter;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
-@Primary
+@Component("CF")
 public class CollaborativeFilter implements Filter {
 
     @Override
